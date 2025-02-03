@@ -10,10 +10,10 @@ const FlatCard = () => {
          <Image source={{ uri: "https://media.gq.com/photos/65aea7982f522e04cf8951c6/4:3/w_1024%2Cc_limit/PFWM_AW24_Day5_GQ_CrisFragkou_14.jpg" }}  style={styles.CardImage} />
         </View>
         <View style={[styles.card, styles.cardTwo]}>
-        <Image source={{ uri: "https://cdn.arabsstock.com/uploads/images/99203/image-99203-follow-up-fashion-beauty-elegance-womens-clothing-accessor-thumbnail.webp" }}  style={styles.CardImage} />
+        <Image source={{ uri: "https://sc04.alicdn.com/kf/Ha54138508e9e4a4cb4c6a18c92f76acbR.jpg" }}  style={styles.CardImage} />
         </View>
         <View style={[styles.card, styles.cardThree]}>
-        <Image source={{ uri: "https://sc04.alicdn.com/kf/Ha54138508e9e4a4cb4c6a18c92f76acbR.jpg" }}  style={styles.CardImage} />
+        <Image source={{ uri: "https://cdn.arabsstock.com/uploads/images/99203/image-99203-follow-up-fashion-beauty-elegance-womens-clothing-accessor-thumbnail.webp" }}  style={styles.CardImage} />
         </View>
       </View>
     </View>
