@@ -1,54 +1,45 @@
-import {StyleSheet, Text, SafeAreaView, ScrollView ,View} from 'react-native';
+import { SafeAreaView, ScrollView, View, Text, StyleSheet } from 'react-native';
 import React from 'react';
-import Flatlist from './components/common/FlatCard';
+import FlatCard from './components/common/FlatCard';
+import PromotionCard from './components/common/PromotionCard';
+import Images from './components/common/Images';
+import ElevatedCard from './components/common/ElevatedCard';
+import ActionCard from './components/common/ActionCard';
 
-const App = () => {
+const app = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <View style={styles.containerBox}>
-          <Text style={styles.text}>React-Native CLI</Text>
-          <Flatlist />
-        </View>
-        <View style={styles.containerBox}>
-          <Text style={styles.text}>React-Native CLI</Text>
-          <Flatlist />
-        </View>
-        <View style={styles.containerBox}>
-          <Text style={styles.text}>React-Native CLI</Text>
-          <Flatlist />
-        </View>
-        <View style={styles.containerBox}>
-          <Text style={styles.text}>React-Native CLI</Text>
-          <Flatlist />
-        </View>
-        <View style={styles.containerBox}>
-          <Text style={styles.text}>React-Native CLI</Text>
-          <Flatlist />
+        <View>
+          <View style={styles.mainHeading}>
+          <Text style={styles.text}>ShoPPing-hUB</Text>
+          </View>
+          <FlatCard />
+          <PromotionCard />
+          <Images/>
+          <ElevatedCard/>
+          <ActionCard/>
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-export default App;
+export default app;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor : "rgb(17, 20, 39)",
+  container : {
+    flex : 1,
+    backgroundColor : "#F8EDED"
+  },
+  mainHeading :{
+    padding : 10,
+    justifyContent : "center",
+    alignItems : "center"
   },
   text: {
-    fontSize: 20,
-    fontWeight: '800',
-    color: '#F88319',
-    marginBottom : 10,
-    padding : 18,
-    textAlign : "center"
-  },
-  containerBox:{
-    margin: 30
+    fontSize: 32,
+    fontWeight : 800,
+    color: "#4C585B",
   }
 });
